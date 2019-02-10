@@ -1,0 +1,29 @@
+npx aws-api-gateway-cli-test \
+--username='admin@example.com' \
+--password='Passw0rd!' \
+--user-pool-id='us-east-2_pvb5L25RM' \
+--app-client-id='49ej8mu9b50s333bfbmear9t60' \
+--cognito-region='us-east-2' \
+--identity-pool-id='us-east-2:fc028a19-fb7d-4659-acd3-5ae1188d05ba' \
+--invoke-url='https://xnvtr6e1g4.execute-api.us-east-2.amazonaws.com/prod' \
+--api-gateway-region='us-east-2' \
+--path-template='/helloworld' \
+--method='POST' \
+--body='{"content":"hello world","attachment":"hello.jpg"}'
+
+
+
+
+
+apig-test \
+--username='admin@example.com' \
+--password='Passw0rd!' \
+--user-pool-id='us-east-1_YBhdXYvix' \
+--app-client-id='29qwoeorti0ctjkur5h91lkw5g' \
+--cognito-region='us-east-1' \
+--identity-pool-id='us-east-1:565cc505-5486-4278-bf0f-9736p9apq8m5' \
+--invoke-url='https://w5z1hluqmp5.execute-api.us-east-1.amazonaws.com/test' \
+--api-gateway-region='us-east-1' \
+--path-template='/notes' \
+--method='POST' \
+--body='{"content":"hello world","attachment":"hello.jpg"}'
